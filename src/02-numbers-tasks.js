@@ -109,17 +109,16 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (0,1)     => 0
  *   (0,1) (1,2)     => 0
  */
-// function getAngleBetweenVectors(/*x1, y1, x2, y2*/) {
-//   // const dotProduct = x1 * x2 + y1 * y2;
-//   // const vectorLengths = Math.sqrt(x1 * x1 + y1 * y1) * Math.sqrt(x2 * x2 + y2 * y2);
-//   // const resultAngle = (180 * Math.acos(dotProduct / vectorLengths)) / Math.PI;
-//   // return resultAngle;
+function getAngleBetweenVectors(x1, y1, x2, y2) {
+  const dotProduct = x1 * x2 + y1 * y2;
+  const vectorLengths = Math.sqrt(x1 * x1 + y1 * y1) * Math.sqrt(x2 * x2 + y2 * y2);
+  const resultAngle = Math.acos(dotProduct / vectorLengths);
+  return resultAngle;
+}
+
+// function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
 //   throw new Error('Not implemented');
 // }
-
-function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
-}
 
 /**
  * Returns a last digit of a integer number.
